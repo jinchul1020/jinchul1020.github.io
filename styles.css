@@ -1,0 +1,64 @@
+:root {
+  color-scheme: dark;
+  --ink: #f7f1d2;
+  --muted: #b9b89c;
+  --bg: #14131d;
+  --panel: #211f2d;
+  --accent: #f2b84b;
+  --line: #474159;
+  font-family: "Trebuchet MS", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--ink);
+  background: radial-gradient(circle at 80% 0%, #302544 0, var(--bg) 42rem);
+  line-height: 1.6;
+}
+
+.site-header, main, .site-footer {
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand { color: var(--ink); font-weight: 800; letter-spacing: .12em; text-decoration: none; }
+.brand span, .section-label, .eyebrow { color: var(--accent); }
+.site-nav { display: flex; align-items: center; gap: clamp(.75rem, 3vw, 2rem); }
+.site-nav a, .language-toggle { color: var(--muted); font: inherit; text-decoration: none; }
+.site-nav a:hover, .site-nav a:focus-visible, .language-toggle:hover, .language-toggle:focus-visible { color: var(--accent); }
+.language-toggle { border: 1px solid var(--line); border-radius: .35rem; padding: .25rem .5rem; background: transparent; cursor: pointer; }
+
+main { padding-bottom: 4rem; }
+.hero { min-height: 32rem; display: grid; align-content: center; max-width: 48rem; }
+.eyebrow, .section-label { font-size: .75rem; font-weight: 800; letter-spacing: .16em; }
+h1, h2 { line-height: 1.1; margin: .65rem 0 1rem; }
+h1 { font-size: clamp(2.4rem, 8vw, 5.5rem); max-width: 11ch; }
+h2 { font-size: clamp(1.7rem, 4vw, 3rem); }
+.hero-copy, .content-section > p:not(.section-label), .game-preview > p:not(.section-label) { color: var(--muted); max-width: 42rem; }
+.content-section, .game-preview { border-top: 1px solid var(--line); padding: 4rem 0; }
+.interest-grid { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+.interest-grid span { background: var(--panel); border: 1px solid var(--line); padding: .55rem .8rem; font-size: .9rem; }
+.game-preview { margin-top: 2rem; }
+.game-screen { min-height: 9rem; display: grid; place-items: center; margin-top: 1.5rem; padding: 1.5rem; color: var(--muted); background: #0c0b11; border: 2px solid var(--accent); text-align: center; }
+.site-footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5rem 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
+
+@media (max-width: 600px) {
+  .site-header { align-items: flex-start; gap: 1rem; }
+  .site-nav { flex-wrap: wrap; justify-content: flex-end; gap: .65rem 1rem; }
+  .hero { min-height: 25rem; }
+  .content-section, .game-preview { padding: 3rem 0; }
+  .site-footer { flex-direction: column; }
+}
