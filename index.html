@@ -7,6 +7,7 @@
     <title>Jinchul | Embedded Systems Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
+    <script src="game.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -14,46 +15,81 @@
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="#about" data-i18n="navAbout">소개</a>
         <a href="#work" data-i18n="navWork">경력</a>
+        <a href="#projects" data-i18n="navProjects">프로젝트</a>
+        <a href="#research" data-i18n="navResearch">연구</a>
         <a href="#games" data-i18n="navGames">Games</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
         <button class="language-toggle" type="button" data-language-toggle aria-pressed="false">EN</button>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <p class="eyebrow" data-i18n="eyebrow">EMBEDDED SYSTEMS · CAMERA</p>
+        <p class="eyebrow" data-i18n="eyebrow">임베디드 시스템 · 카메라</p>
         <h1 id="hero-title" data-i18n="heroTitle">시스템을 설계하고, 경험을 선명하게 만듭니다.</h1>
         <p class="hero-copy" data-i18n="heroCopy">카메라 시스템과 화질 개발 경험을 바탕으로 임베디드 하드웨어와 소프트웨어의 접점을 탐구합니다.</p>
+        <a class="hero-link" href="#games" data-i18n="heroCta">게임 미션 시작하기 →</a>
       </section>
 
       <section id="about" class="content-section" aria-labelledby="about-title">
         <p class="section-label">01 / PROFILE</p>
         <h2 id="about-title" data-i18n="aboutTitle">정진철 · Embedded Explorer</h2>
         <p data-i18n="aboutCopy">컴퓨터 공학을 전공하고 삼성전자 무선사업부에서 카메라 시스템 개발과 카메라 화질 개발을 진행했습니다. 임베디드 시스템, 시스템 개발, 임베디드 H/W에 관심이 있습니다.</p>
+        <div class="interest-grid">
+          <span data-i18n="interestOne">Embedded Systems</span>
+          <span data-i18n="interestTwo">Camera Systems</span>
+          <span data-i18n="interestThree">HW / SW Interface</span>
+        </div>
       </section>
 
       <section id="work" class="content-section" aria-labelledby="work-title">
         <p class="section-label">02 / EXPERIENCE</p>
         <h2 id="work-title" data-i18n="workTitle">관찰하고, 연결하고, 개선합니다.</h2>
-        <p data-i18n="workCopy">기술의 디테일과 사용자의 경험을 함께 바라보며 견고한 시스템을 고민합니다.</p>
-        <div class="interest-grid">
-          <span>Embedded Systems</span>
-          <span>Camera Systems</span>
-          <span>HW / SW Interface</span>
+        <div class="timeline-card">
+          <p class="card-kicker" data-i18n="workKicker">삼성전자 · 무선사업부</p>
+          <p data-i18n="workCopy">카메라 시스템 개발과 카메라 화질 개발을 수행하며 하드웨어, 펌웨어, 이미지 품질 사이의 문제를 탐구했습니다.</p>
         </div>
       </section>
 
-      <section id="games" class="game-preview" aria-labelledby="games-title">
-        <p class="section-label">03 / GAMES</p>
-        <h2 id="games-title" data-i18n="gamesTitle">Pixel Rescue Mission</h2>
-        <p data-i18n="gamesCopy">지하 던전에서 공주를 구하는 오리지널 픽셀풍 게임이 준비 중입니다.</p>
-        <div class="game-screen" aria-label="Game area coming soon" data-i18n="gamesStatus">게임 영역 준비 중 · 다음 루프에서 조작과 상태를 구현합니다.</div>
+      <section id="projects" class="content-section" aria-labelledby="projects-title">
+        <p class="section-label">03 / PROJECTS</p>
+        <h2 id="projects-title" data-i18n="projectsTitle">관심을 프로토타입으로 바꿉니다.</h2>
+        <div class="project-grid">
+          <article class="project-card"><span class="card-kicker">01</span><h3 data-i18n="projectOneTitle">Embedded Lab Notes</h3><p data-i18n="projectOneCopy">임베디드 시스템과 H/W·S/W 인터페이스를 탐구하는 개인 연구 노트.</p></article>
+          <article class="project-card"><span class="card-kicker">02</span><h3 data-i18n="projectTwoTitle">Pixel Rescue Mission</h3><p data-i18n="projectTwoCopy">상태 머신과 입력 설계를 실험하는 브라우저 게임 프로토타입.</p></article>
+        </div>
+      </section>
+
+      <section id="research" class="content-section" aria-labelledby="research-title">
+        <p class="section-label">04 / RESEARCH</p>
+        <h2 id="research-title" data-i18n="researchTitle">작은 신호에서 큰 시스템을 읽습니다.</h2>
+        <p data-i18n="researchCopy">카메라 시스템, 임베디드 H/W, 사용자 경험이 만나는 지점을 꾸준히 기록하고 실험합니다.</p>
+      </section>
+
+      <section id="games" class="game-section" aria-labelledby="games-title">
+        <p class="section-label">05 / GAMES</p>
+        <div class="game-heading"><div><h2 id="games-title" data-i18n="gamesTitle">Pixel Rescue Mission</h2><p data-i18n="gamesCopy">오리지널 픽셀풍 주인공이 지하 던전에서 공주를 구하는 지렁이 게임.</p></div><span class="status-chip" data-game-status>READY</span></div>
+        <div class="game-layout">
+          <div class="game-frame">
+            <canvas id="game-canvas" width="480" height="320" aria-label="Pixel Rescue Mission game area"></canvas>
+            <div class="game-overlay" data-game-overlay><strong data-game-message>START MISSION</strong><span data-i18n="gameInstruction">방향키·WASD 또는 모바일 버튼으로 이동하세요.</span></div>
+          </div>
+          <aside class="game-panel" aria-label="Game controls and status">
+            <div class="stat-grid"><div><span data-i18n="scoreLabel">SCORE</span><strong data-score>0</strong></div><div><span data-i18n="livesLabel">LIVES</span><strong data-lives>❤❤</strong></div><div><span data-i18n="highScoreLabel">BEST</span><strong data-high-score>0</strong></div></div>
+            <div class="game-actions"><button type="button" class="primary-button" data-game-start data-i18n="startButton">START</button><button type="button" class="secondary-button" data-game-pause disabled data-i18n="pauseButton">PAUSE</button><button type="button" class="secondary-button" data-game-restart data-i18n="restartButton">RESTART</button></div>
+            <div class="touch-controls" aria-label="Touch controls"><button type="button" data-direction="up" aria-label="Up">▲</button><div><button type="button" data-direction="left" aria-label="Left">◀</button><button type="button" data-direction="down" aria-label="Down">▼</button><button type="button" data-direction="right" aria-label="Right">▶</button></div></div>
+            <p class="game-note" data-i18n="gameRule">10초 생존마다 1점 · 음식은 성장과 보너스 점수 · 적 5개 · 10점 승리</p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="contact" class="content-section contact-section" aria-labelledby="contact-title">
+        <p class="section-label">06 / CONTACT</p>
+        <h2 id="contact-title" data-i18n="contactTitle">관심사가 겹친다면, 이 사이트에서 만나요.</h2>
+        <p data-i18n="contactCopy">공개 연락처 없이도 프로젝트와 기록으로 이야기를 이어갑니다.</p>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <span>© 2026 Jinchul</span>
-      <span data-i18n="footerText">Systems, pixels, and curiosity.</span>
-    </footer>
+    <footer class="site-footer"><span>© 2026 Jinchul</span><span data-i18n="footerText">Systems, pixels, and curiosity.</span></footer>
   </body>
 </html>

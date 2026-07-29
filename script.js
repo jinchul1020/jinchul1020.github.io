@@ -1,41 +1,10 @@
 const translations = {
-  ko: {
-    navAbout: "소개", navWork: "경력", navGames: "Games", eyebrow: "임베디드 시스템 · 카메라",
-    heroTitle: "시스템을 설계하고, 경험을 선명하게 만듭니다.",
-    heroCopy: "카메라 시스템과 화질 개발 경험을 바탕으로 임베디드 하드웨어와 소프트웨어의 접점을 탐구합니다.",
-    aboutTitle: "정진철 · Embedded Explorer",
-    aboutCopy: "컴퓨터 공학을 전공하고 삼성전자 무선사업부에서 카메라 시스템 개발과 카메라 화질 개발을 진행했습니다. 임베디드 시스템, 시스템 개발, 임베디드 H/W에 관심이 있습니다.",
-    workTitle: "관찰하고, 연결하고, 개선합니다.", workCopy: "기술의 디테일과 사용자의 경험을 함께 바라보며 견고한 시스템을 고민합니다.",
-    gamesTitle: "Pixel Rescue Mission", gamesCopy: "지하 던전에서 공주를 구하는 오리지널 픽셀풍 게임이 준비 중입니다.",
-    gamesStatus: "게임 영역 준비 중 · 다음 루프에서 조작과 상태를 구현합니다.", footerText: "Systems, pixels, and curiosity."
-  },
-  en: {
-    navAbout: "About", navWork: "Work", navGames: "Games", eyebrow: "EMBEDDED SYSTEMS · CAMERA",
-    heroTitle: "Designing systems, sharpening experiences.",
-    heroCopy: "Exploring the space between embedded hardware and software through camera system and image-quality development.",
-    aboutTitle: "Jinchul · Embedded Explorer",
-    aboutCopy: "I studied computer engineering and worked on camera system and image-quality development at Samsung Electronics Wireless Business Division. My interests include embedded systems, system development, and embedded hardware.",
-    workTitle: "Observe, connect, improve.", workCopy: "I think about robust systems by looking at technical detail and human experience together.",
-    gamesTitle: "Pixel Rescue Mission", gamesCopy: "An original pixel-style dungeon game about rescuing a princess is in preparation.",
-    gamesStatus: "Game area in preparation · Controls and state come in the next loop.", footerText: "Systems, pixels, and curiosity."
-  }
+  ko: { navAbout:"소개",navWork:"경력",navProjects:"프로젝트",navResearch:"연구",navGames:"Games",navContact:"Contact",eyebrow:"임베디드 시스템 · 카메라",heroTitle:"시스템을 설계하고, 경험을 선명하게 만듭니다.",heroCopy:"카메라 시스템과 화질 개발 경험을 바탕으로 임베디드 하드웨어와 소프트웨어의 접점을 탐구합니다.",heroCta:"게임 미션 시작하기 →",aboutTitle:"정진철 · Embedded Explorer",aboutCopy:"컴퓨터 공학을 전공하고 삼성전자 무선사업부에서 카메라 시스템 개발과 카메라 화질 개발을 진행했습니다. 임베디드 시스템, 시스템 개발, 임베디드 H/W에 관심이 있습니다.",interestOne:"Embedded Systems",interestTwo:"Camera Systems",interestThree:"HW / SW Interface",workTitle:"관찰하고, 연결하고, 개선합니다.",workKicker:"삼성전자 · 무선사업부",workCopy:"카메라 시스템 개발과 카메라 화질 개발을 수행하며 하드웨어, 펌웨어, 이미지 품질 사이의 문제를 탐구했습니다.",projectsTitle:"관심을 프로토타입으로 바꿉니다.",projectOneTitle:"Embedded Lab Notes",projectOneCopy:"임베디드 시스템과 H/W·S/W 인터페이스를 탐구하는 개인 연구 노트.",projectTwoTitle:"Pixel Rescue Mission",projectTwoCopy:"상태 머신과 입력 설계를 실험하는 브라우저 게임 프로토타입.",researchTitle:"작은 신호에서 큰 시스템을 읽습니다.",researchCopy:"카메라 시스템, 임베디드 H/W, 사용자 경험이 만나는 지점을 꾸준히 기록하고 실험합니다.",gamesTitle:"Pixel Rescue Mission",gamesCopy:"오리지널 픽셀풍 주인공이 지하 던전에서 공주를 구하는 지렁이 게임.",gameInstruction:"방향키·WASD 또는 모바일 버튼으로 이동하세요.",scoreLabel:"SCORE",livesLabel:"LIVES",highScoreLabel:"BEST",startButton:"START",pauseButton:"PAUSE",restartButton:"RESTART",gameRule:"10초 생존마다 1점 · 음식은 성장과 보너스 점수 · 적 5개 · 10점 승리",contactTitle:"관심사가 겹친다면, 이 사이트에서 만나요.",contactCopy:"공개 연락처 없이도 프로젝트와 기록으로 이야기를 이어갑니다.",footerText:"Systems, pixels, and curiosity."},
+  en: { navAbout:"About",navWork:"Work",navProjects:"Projects",navResearch:"Research",navGames:"Games",navContact:"Contact",eyebrow:"EMBEDDED SYSTEMS · CAMERA",heroTitle:"Designing systems, sharpening experiences.",heroCopy:"Exploring the space between embedded hardware and software through camera system and image-quality development.",heroCta:"Start the game mission →",aboutTitle:"Jinchul · Embedded Explorer",aboutCopy:"I studied computer engineering and worked on camera system and image-quality development at Samsung Electronics Wireless Business Division. My interests include embedded systems, system development, and embedded hardware.",interestOne:"Embedded Systems",interestTwo:"Camera Systems",interestThree:"HW / SW Interface",workTitle:"Observe, connect, improve.",workKicker:"Samsung Electronics · Wireless Business Division",workCopy:"I explored problems across hardware, firmware, and image quality through camera system and image-quality development.",projectsTitle:"Turning curiosity into prototypes.",projectOneTitle:"Embedded Lab Notes",projectOneCopy:"Personal notes exploring embedded systems and H/W·S/W interfaces.",projectTwoTitle:"Pixel Rescue Mission",projectTwoCopy:"A browser game prototype for experimenting with state machines and input design.",researchTitle:"Reading big systems through small signals.",researchCopy:"I keep notes and experiments where camera systems, embedded hardware, and human experience meet.",gamesTitle:"Pixel Rescue Mission",gamesCopy:"An original pixel-style snake game where a hero rescues a princess in a dungeon.",gameInstruction:"Use arrows, WASD, or the mobile buttons to move.",scoreLabel:"SCORE",livesLabel:"LIVES",highScoreLabel:"BEST",startButton:"START",pauseButton:"PAUSE",restartButton:"RESTART",gameRule:"+1 point every 10 seconds · food grows the hero · 5 enemies · win at 10",contactTitle:"If our interests overlap, meet me here.",contactCopy:"Projects and notes keep the conversation going without public contact details.",footerText:"Systems, pixels, and curiosity."}
 };
 
-const languageToggle = document.querySelector("[data-language-toggle]");
 let language = "ko";
-
-function renderLanguage() {
-  document.documentElement.lang = language;
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
-    element.textContent = translations[language][element.dataset.i18n];
-  });
-  languageToggle.textContent = language === "ko" ? "EN" : "KO";
-  languageToggle.setAttribute("aria-pressed", String(language === "en"));
-}
-
-languageToggle.addEventListener("click", () => {
-  language = language === "ko" ? "en" : "ko";
-  renderLanguage();
-});
-
+const languageToggle = document.querySelector("[data-language-toggle]");
+function renderLanguage() { document.documentElement.lang=language; document.querySelectorAll("[data-i18n]").forEach((element)=>{ element.textContent=translations[language][element.dataset.i18n]; }); languageToggle.textContent=language === "ko" ? "EN" : "KO"; languageToggle.setAttribute("aria-pressed",String(language === "en")); }
+languageToggle.addEventListener("click",()=>{ language=language === "ko" ? "en" : "ko"; renderLanguage(); });
 renderLanguage();
